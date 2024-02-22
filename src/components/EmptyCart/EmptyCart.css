@@ -1,0 +1,28 @@
+.empty-cart-container {
+  padding: 50px 0; /* Adjust padding for better spacing */
+  text-align: center;
+}
+
+.empty-cart-image {
+  max-width: 250px; /* Adjust based on your design */
+  margin-bottom: 25px;
+}
+
+.empty-cart-text {
+  margin-bottom: 20px;
+  color: #666; /* Soft color for a friendly message */
+}
+
+.start-exploring-btn {
+  background: linear-gradient(135deg, #EA8D8D 0%, #CC4260 100%); /* Primary color for visibility */
+  color: mintcream; /* White text for contrast */
+  padding: 10px 30px; /* Larger padding for a more clickable area */
+  border-radius: 20px; /* Rounded corners for a modern look */
+  font-size: 18px; /* Larger font size for readability */
+  text-decoration: none; /* Remove underline from link */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.start-exploring-btn:hover {
+  background-color: #CC4260; /* Darker shade on hover for interaction feedback */
+}

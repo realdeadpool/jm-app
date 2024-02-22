@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Voltaire';
+    src: url('Voltaire-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+  background-color: mintcream;
+}
+
+.landscape-swiper {
+  height: 600px;
+    background-color: mintcream;
+    border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.card-style {
+  background-color: mintcream;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow around the card */
+  border-radius: 10px; /* Rounds the corners of the card */
+  /*overflow: hidden; !* Ensures the content fits within the rounded corners *!*/
+  padding: 15px;
+  margin-bottom: 30px;
+
+}
+.gallery-header, .card-title {
+  font-family: 'Voltaire', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333333; /* Darker for contrast */
+  text-align: center;
+  margin-bottom: 20px; /* More space for a less cramped look */
+}
+.swiper-image {
+  width: 100%;
+    height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: brightness(0.75) contrast(1.20);
+    transition: transform 0.5s ease, filter 0.5s ease;
+    border-radius: 5px;
+}
+.swiper-image:hover {
+  transform: scale(1.02);
+  filter: brightness(1) contrast(1.2);
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  color: mintcream;
+  font-size: 20px;
+}
+.swiper-button-next:hover .swiper-button-prev:hover{
+  color: #ccc; /* Lighter color on hover for visual feedback */
+}

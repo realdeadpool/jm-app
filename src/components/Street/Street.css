@@ -1,0 +1,52 @@
+
+.street-gallery-container {
+  padding: var(--padding-vertical) var(--padding-horizontal);
+  background-color: var(--background-color);
+}
+.street-grid-item {
+  max-width: 100%;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var(--box-shadow-color);
+  position: relative;
+  cursor: pointer; /* Make the whole item clickable */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+.street-grid-item:hover {
+  box-shadow: 0 6px 12px var(--hover-box-shadow-color);
+  transform: scale(1.03); /* Slight scale effect on hover for visual feedback */
+}
+.street-gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+    top: 0;
+    left: 0;
+  cursor: pointer;
+  filter: brightness(0.75) contrast(1.20);
+    transition: filter 0.3s ease;
+}
+.street-grid-item:hover .street-gallery-image {
+  filter: brightness(1) contrast(1); /* Reset filter to normal on hover */
+}
+.spinner {
+  color: #5469d4;
+  font-size: 22px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  text-indent: -9999em;
+  animation: spin 1.1s infinite linear;
+  transform: translateZ(0);
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.street-gallery-image {
+  animation: fadeIn 0.5s ease-out;
+}
+
+

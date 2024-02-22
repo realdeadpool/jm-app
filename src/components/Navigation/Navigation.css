@@ -1,0 +1,55 @@
+.navbar-custom {
+  background-color: mintcream; /* Example background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  justify-content: flex-end;/* Adjusted padding for better spacing */
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;/* Adjusted padding for better spacing */
+}
+.navbar-brand img {
+    max-width: 100%; /* Ensures the image is never more than 100% of its container */
+    height: auto; /* Maintains aspect ratio */
+}
+.social-nav {
+  display: flex;
+  justify-content:  center;
+  gap: 5px;
+}
+.social-link {
+  display: flex;
+  padding: 8px 4px 14px;
+  font-size: 1.3rem;
+  color: #212529; /* Spacing between navigation links */
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: .25rem;
+
+}
+.social-link:hover {
+  color: #CC4260; /* Highlight color on hover */
+}
+.cart-item-count {
+  background-color: #CC4260;
+  color: mintcream;
+  border-radius: 50%;
+  padding: 0 6px;
+  font-size: 0.8em;
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .social-nav {
+    justify-content: center;
+    margin-top: 15px; /* Add some space between nav links and social links */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    width: 250px; /* Adjust logo size for very small screens */
+  }
+}
+

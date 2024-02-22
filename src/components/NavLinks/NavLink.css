@@ -1,0 +1,18 @@
+.navi-link {
+  font-family: Voltaire, sans-serif, system-ui;
+  color: #212409;
+  font-size: 1.1rem;
+  margin-right: 1rem; /* Spacing between navigation links */
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+  text-align: center; /* Center navigation links */
+}
+.navi-link:hover, .navi-link:active{
+  color: #CC4260; /* Highlight color on hover */
+  text-decoration: none;
+}
+.active {
+  color: #CC4260; /* Highlight color on hover */
+  font-weight: bold;
+}
+
+

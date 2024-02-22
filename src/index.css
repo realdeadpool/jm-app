@@ -1,0 +1,8 @@
+@font-face{
+  font-family:'Gardena';
+  src:url('../public/GardensC.woff2') format('woff2'),
+      url('../public/GardensC.woff') format('woff');
+}
+body {
+    background-color: mintcream;
+}
